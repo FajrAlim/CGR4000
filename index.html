@@ -97,26 +97,33 @@
 				fullscreenControl: false,
 				resizerControl: true,
 				preferCanvas: true,
+				rotate: true,
+				// bearing: 45,
+				rotateControl: {
+					closeOnZeroBearing: true
+				},
 			},
 			elevationControl: {
-				url: "https://fajralim.github.io/CGR4000/CGR4000.gpx",
+				url: "https://https://fajralim.github.io/CGR4000/CGR4000.gpx",
 				options: {
 					theme: "lightblue-theme",
-					preferCanvas: true,
 					collapsed: false,
+					autohide: false,
+					autofitBounds: true,
+					position: "bottomleft",
 					detached: true,
-					useLeafletMarker: true,
-					summary: 'multiline',
-					hotline: false,
+					summary: "inline",
 					imperial: false,
-					altitude: true,
+					// altitude: "disabled",
 					slope: "disabled",
-					distance: true,
+					speed: false,
+					acceleration: false,
+					time: "summary",
 					legend: true,
 					followMarker: true,
 					almostOver: true,
-					distanceMarkers: true,
-					waypoints: true,
+					distanceMarkers: false,
+					hotline: false,
 
 					/**
 					 * Custom waypoint icons
